@@ -1,0 +1,6 @@
+[book]
+authors = ["Eric Evenchick"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The CANtact Book"
