@@ -6,4 +6,4 @@ src = "src"
 title = "The CANtact Book"
 
 [build]
-build-dir = "public"
+build-dir = "book"
