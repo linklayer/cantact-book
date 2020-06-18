@@ -1,3 +1,0 @@
-# SocketCAN Gateways
-
-**TODO**

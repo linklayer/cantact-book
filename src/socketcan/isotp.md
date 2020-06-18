@@ -5,6 +5,7 @@ The can-utils package contains tools for working with ISOTP. However, the kernel
 The can-isotp kernel module and build instructions are available [on Github](https://github.com/hartkopp/can-isotp)
 
 ## Testing ISOTP Driver
+
 To use ISOTP, you will need two physically connected CAN channels (or gatewayed virtual CAN devices) to send and receive data. Once set up, start `isotprecv`:
 ```
 isotprecv -s456 -d123 can1
