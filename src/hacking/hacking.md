@@ -1,17 +1,25 @@
 # Hacking
 
-All CANtact related development takes place on Github. If you find a bug, please file an issue there.
-There are several relevant repositories containing code and design files for the CANtact Pro:
+Want to hack on CANtact? Great!
+
+All CANtact related development takes place on Github. If you find a bug, please file an issue there. There are several relevant repositories containing code and design files.
+
+## CANtact CLI and Driver
+
+The CANtact CLI and Driver are written in Rust. The repository can be found [on Github](https://github.com/linklayer/cantact).
+
+## CANtact Pro
+
+Design files and firmware for CANtact Pro:
 
 - [CANtact Pro Hardware](https://github.com/linklayer/cantact-pro-hw)
 - [CANtact Pro Firmware](https://github.com/linklayer/cantact-pro-fw)
-- [CANtact CLI and Driver](https://github.com/linklayer/cantact)
 
-## Hardware
+### Hardware
 
 CANtact Pro is designed using the open source [KiCAD EDA](https://kicad-pcb.org/) suite.
 
-## Firmware
+### Firmware
 
 The CANtact Pro is powered by an NXP LPC546xx series microcontroller (specifically, the [LPC54616J512BD100](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc54000-cortex-m4-/power-efficient-microcontrollers-mcus-with-advanced-peripherals-based-on-arm-cortex-m4-core:LPC546XX?fpsp=1&tab=Documentation_Tab)). 
 

@@ -1,7 +1,6 @@
 # Summary
 - [Introduction](./introduction.md)
 - [CANtact Pro User Guide](./cantact-pro/users-guide.md)
-    - [Hacking](cantact-pro/hacking.md)
 - [CANtact User Guide](./cantact/users-guide.md)
 - [Software Tools](./tools/software-tools.md)
     - [CANtact CLI](./tools/cantact-cli.md)
@@ -17,3 +16,5 @@
     - [Virtual Devices](./socketcan/virtual-devices.md)
     - [Utilities](./socketcan/utilities.md)
     - [ISOTP](./socketcan/isotp.md)
+- [Hacking](hacking/hacking.md)
+- [Support](support/support.md)
