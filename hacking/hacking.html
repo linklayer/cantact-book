@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../cantact-pro/users-guide.html"><strong aria-hidden="true">2.</strong> CANtact Pro User Guide</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../cantact-pro/hacking.html" class="active"><strong aria-hidden="true">2.1.</strong> Hacking</a></li></ol></li><li class="chapter-item expanded "><a href="../cantact/users-guide.html"><strong aria-hidden="true">3.</strong> CANtact User Guide</a></li><li class="chapter-item expanded "><a href="../tools/software-tools.html"><strong aria-hidden="true">4.</strong> Software Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../tools/cantact-cli.html"><strong aria-hidden="true">4.1.</strong> CANtact CLI</a></li><li class="chapter-item expanded "><a href="../tools/socketcan.html"><strong aria-hidden="true">4.2.</strong> SocketCAN</a></li><li class="chapter-item expanded "><a href="../tools/busmaster.html"><strong aria-hidden="true">4.3.</strong> BUSMASTER</a></li></ol></li><li class="chapter-item expanded "><a href="../apis/apis.html"><strong aria-hidden="true">5.</strong> APIs</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../apis/rust.html"><strong aria-hidden="true">5.1.</strong> Rust</a></li><li class="chapter-item expanded "><a href="../apis/python.html"><strong aria-hidden="true">5.2.</strong> Python</a></li><li class="chapter-item expanded "><a href="../apis/c.html"><strong aria-hidden="true">5.3.</strong> C / C++</a></li></ol></li><li class="chapter-item expanded "><a href="../socketcan/socketcan.html"><strong aria-hidden="true">6.</strong> SocketCAN</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../socketcan/getting-socketcan.html"><strong aria-hidden="true">6.1.</strong> Getting SocketCAN</a></li><li class="chapter-item expanded "><a href="../socketcan/hw-devices.html"><strong aria-hidden="true">6.2.</strong> Hardware Devices</a></li><li class="chapter-item expanded "><a href="../socketcan/virtual-devices.html"><strong aria-hidden="true">6.3.</strong> Virtual Devices</a></li><li class="chapter-item expanded "><a href="../socketcan/utilities.html"><strong aria-hidden="true">6.4.</strong> Utilities</a></li><li class="chapter-item expanded "><a href="../socketcan/isotp.html"><strong aria-hidden="true">6.5.</strong> ISOTP</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../cantact-pro/users-guide.html"><strong aria-hidden="true">2.</strong> CANtact Pro User Guide</a></li><li class="chapter-item expanded "><a href="../cantact/users-guide.html"><strong aria-hidden="true">3.</strong> CANtact User Guide</a></li><li class="chapter-item expanded "><a href="../tools/software-tools.html"><strong aria-hidden="true">4.</strong> Software Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../tools/cantact-cli.html"><strong aria-hidden="true">4.1.</strong> CANtact CLI</a></li><li class="chapter-item expanded "><a href="../tools/socketcan.html"><strong aria-hidden="true">4.2.</strong> SocketCAN</a></li><li class="chapter-item expanded "><a href="../tools/busmaster.html"><strong aria-hidden="true">4.3.</strong> BUSMASTER</a></li></ol></li><li class="chapter-item expanded "><a href="../apis/apis.html"><strong aria-hidden="true">5.</strong> APIs</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../apis/rust.html"><strong aria-hidden="true">5.1.</strong> Rust</a></li><li class="chapter-item expanded "><a href="../apis/python.html"><strong aria-hidden="true">5.2.</strong> Python</a></li><li class="chapter-item expanded "><a href="../apis/c.html"><strong aria-hidden="true">5.3.</strong> C / C++</a></li></ol></li><li class="chapter-item expanded "><a href="../socketcan/socketcan.html"><strong aria-hidden="true">6.</strong> SocketCAN</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../socketcan/getting-socketcan.html"><strong aria-hidden="true">6.1.</strong> Getting SocketCAN</a></li><li class="chapter-item expanded "><a href="../socketcan/hw-devices.html"><strong aria-hidden="true">6.2.</strong> Hardware Devices</a></li><li class="chapter-item expanded "><a href="../socketcan/virtual-devices.html"><strong aria-hidden="true">6.3.</strong> Virtual Devices</a></li><li class="chapter-item expanded "><a href="../socketcan/utilities.html"><strong aria-hidden="true">6.4.</strong> Utilities</a></li><li class="chapter-item expanded "><a href="../socketcan/isotp.html"><strong aria-hidden="true">6.5.</strong> ISOTP</a></li></ol></li><li class="chapter-item expanded "><a href="../hacking/hacking.html" class="active"><strong aria-hidden="true">7.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="../support/support.html"><strong aria-hidden="true">8.</strong> Support</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -148,16 +148,19 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#hacking" id="hacking">Hacking</a></h1>
-<p>All CANtact related development takes place on Github. If you find a bug, please file an issue there.
-There are several relevant repositories containing code and design files for the CANtact Pro:</p>
+<p>Want to hack on CANtact? Great!</p>
+<p>All CANtact related development takes place on Github. If you find a bug, please file an issue there. There are several relevant repositories containing code and design files.</p>
+<h2><a class="header" href="#cantact-cli-and-driver" id="cantact-cli-and-driver">CANtact CLI and Driver</a></h2>
+<p>The CANtact CLI and Driver are written in Rust. The repository can be found <a href="https://github.com/linklayer/cantact">on Github</a>.</p>
+<h2><a class="header" href="#cantact-pro" id="cantact-pro">CANtact Pro</a></h2>
+<p>Design files and firmware for CANtact Pro:</p>
 <ul>
 <li><a href="https://github.com/linklayer/cantact-pro-hw">CANtact Pro Hardware</a></li>
 <li><a href="https://github.com/linklayer/cantact-pro-fw">CANtact Pro Firmware</a></li>
-<li><a href="https://github.com/linklayer/cantact">CANtact CLI and Driver</a></li>
 </ul>
-<h2><a class="header" href="#hardware" id="hardware">Hardware</a></h2>
+<h3><a class="header" href="#hardware" id="hardware">Hardware</a></h3>
 <p>CANtact Pro is designed using the open source <a href="https://kicad-pcb.org/">KiCAD EDA</a> suite.</p>
-<h2><a class="header" href="#firmware" id="firmware">Firmware</a></h2>
+<h3><a class="header" href="#firmware" id="firmware">Firmware</a></h3>
 <p>The CANtact Pro is powered by an NXP LPC546xx series microcontroller (specifically, the <a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc54000-cortex-m4-/power-efficient-microcontrollers-mcus-with-advanced-peripherals-based-on-arm-cortex-m4-core:LPC546XX?fpsp=1&amp;tab=Documentation_Tab">LPC54616J512BD100</a>). </p>
 <p>NXP provides their <a href="https://www.nxp.com/design/software/development-software/mcuxpresso-software-and-tools/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE">MCUXpresso IDE</a>
 free of charge, which can be used to develop and debug firmware for the device.</p>
@@ -167,13 +170,13 @@ free of charge, which can be used to develop and debug firmware for the device.<
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../cantact-pro/users-guide.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../socketcan/isotp.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../cantact/users-guide.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../support/support.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -185,13 +188,13 @@ free of charge, which can be used to develop and debug firmware for the device.<
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../cantact-pro/users-guide.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../socketcan/isotp.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../cantact/users-guide.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../support/support.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
