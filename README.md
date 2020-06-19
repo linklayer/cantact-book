@@ -1,1 +1,1 @@
-Documentation for CANtact. [Read it here](https://linklayer.gitlab.io/cantact/cantact-book/).
+Documentation for CANtact. [Read it here](https://cantact.io).
