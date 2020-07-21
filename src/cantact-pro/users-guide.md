@@ -51,14 +51,20 @@ Note that single-wire CAN is only available on the CAN 0 connector.
 
 ## LED Indicators
 
-The device has four LEDs, two for each CAN channel.
+The device has four LEDs, two for each CAN channel. When powered on, the LEDs will blink in sequence. The LED indications during normal operations are shown here.
 
 |Color  | State   | Meaning |
 |-------|---------|---------|
-| Red   | Solid   | channel disabled
 | Green | Solid   | channel enabled, no activity
 | Green | Blinking| receive activity 
+| Red   | Solid   | channel transmit enabled, no activity
 | Red   | Blinking| transmit activity 
+
+When using SocketCAN, each CAN interface can be identified by blinking the corresponding LEDs using `ethtool`. This is especially useful when using multiple devices.
+
+```
+sudo ethtool --identify can0
+```
 
 ## Configuring Permissions on Linux
 
