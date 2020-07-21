@@ -205,13 +205,16 @@ firmware following the instructions in this document.</p>
 </tbody></table>
 <p>Note that single-wire CAN is only available on the CAN 0 connector.</p>
 <h2><a class="header" href="#led-indicators" id="led-indicators">LED Indicators</a></h2>
-<p>The device has four LEDs, two for each CAN channel.</p>
+<p>The device has four LEDs, two for each CAN channel. When powered on, the LEDs will blink in sequence. The LED indications during normal operations are shown here.</p>
 <table><thead><tr><th>Color</th><th>State</th><th>Meaning</th></tr></thead><tbody>
-<tr><td>Red</td><td>Solid</td><td>channel disabled</td></tr>
 <tr><td>Green</td><td>Solid</td><td>channel enabled, no activity</td></tr>
 <tr><td>Green</td><td>Blinking</td><td>receive activity</td></tr>
+<tr><td>Red</td><td>Solid</td><td>channel transmit enabled, no activity</td></tr>
 <tr><td>Red</td><td>Blinking</td><td>transmit activity</td></tr>
 </tbody></table>
+<p>When using SocketCAN, each CAN interface can be identified by blinking the corresponding LEDs using <code>ethtool</code>. This is especially useful when using multiple devices.</p>
+<pre><code>sudo ethtool --identify can0
+</code></pre>
 <h2><a class="header" href="#configuring-permissions-on-linux" id="configuring-permissions-on-linux">Configuring Permissions on Linux</a></h2>
 <p>By default, root privileges are required to interact with the device. To allow other users to access the device, 
 create a file at <code>/etc/udev/rules.d/99-cantact.rules</code>:</p>
