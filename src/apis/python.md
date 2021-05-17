@@ -1,11 +1,16 @@
 # Python
 
 A Python API is implemented by the CANtact driver. This can be used directly, but it is recommended to use 
-the `python-can` library. Both components can be installed using `pip`:
+the `python-can` library. The `develop` branch of `python-can` is required to use the command line utilities.
+
+Install `cantact` and `python-can`:
 
 ```
 python3 -m pip -U pip
-python3 -m pip install cantact python-can
+python3 -m pip install cantact
+git clone https://github.com/hardbyte/python-can.git
+cd python-can
+python -m pip install .
 ```
 
 If no binary release exists for your platform, the driver can be built manually. 
