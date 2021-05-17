@@ -5,7 +5,7 @@ the `python-can` library. Both components can be installed using `pip`:
 
 ```
 python3 -m pip -U pip
-python3 -m pip install cantact git+https://github.com/ericevenchick/python-can@cantact
+python3 -m pip install cantact python-can
 ```
 
 If no binary release exists for your platform, the driver can be built manually. 
